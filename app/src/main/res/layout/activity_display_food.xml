@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#85e1de"
+    tools:context="musictag.hytham1.com.calcounter2.DisplayFoodActivity">
+
+ <LinearLayout
+     android:id="@+id/linearLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="#73bae6"
+     android:paddingTop="15dp"
+     android:orientation="horizontal"
+     android:paddingBottom="15dp">
+
+     <TextView
+         android:id="@+id/totalAmountTextView"
+         android:text="@string/food_total_text"
+         android:layout_marginStart="6dp"
+         android:textStyle="bold"
+         android:paddingEnd="14dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <TextView
+         android:text="|"
+         android:textSize="27sp"
+         android:textColor="#e70909"
+         android:layout_marginStart="20dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <TextView
+         android:id="@+id/totalItemTextView"
+         android:text="@string/food_item_num"
+         android:textStyle="bold"
+         android:textSize="15sp"
+         android:layout_marginStart="29dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+ </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/linearLayout"
+        android:divider="#0439fa"
+        android:dividerHeight="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</RelativeLayout>

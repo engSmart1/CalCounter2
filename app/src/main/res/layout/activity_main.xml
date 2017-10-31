@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#6cac05"
+    tools:context="musictag.hytham1.com.calcounter2.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_titleText"
+        android:text="@string/title_text"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_titleText"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/w"
+
+        android:id="@+id/logo"/>
+
+    <LinearLayout
+        android:background="@drawable/raw_bg_g"
+        android:id="@+id/layout"
+        android:layout_marginTop="29dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <EditText
+            android:id="@+id/foodEditText"
+            android:layout_marginTop="4dp"
+            android:hint="@string/hint_food"
+            android:padding="14dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/caloriesEditText"
+            android:padding="14dp"
+            android:layout_width="250dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_calories"/>
+        <Button
+            android:id="@+id/submitButton"
+            android:text="@string/submit_text"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
